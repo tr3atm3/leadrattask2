@@ -1,0 +1,91 @@
+<div class="add-product-page">
+  <a href="?page=productTable" class="position-absolute go-to-product-button">
+    Go To Product Listing Page
+  </a>
+  <div>
+    <h2 class="add-product-heading">Add product</h2>
+    <form class="add-product-form container-fluid">
+      <div class="d-flex form-inputs">
+        <div class="d-flex flex-column justify-start align-items-start">
+          <label for="nameInput"> Name </label>
+          <input
+            id="nameInput"
+            class="col-4 add-product-input"
+            type="text"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="d-flex flex-column justify-start align-items-start">
+          <label for="genderInput">Gender</label>
+          <select
+            id="genderInput"
+            class="col-4 add-product-input"
+            type="select"
+          >
+            <option value="" disabled selected>Select gender</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+      </div>
+      <div class="d-flex form-inputs">
+        <div class="d-flex flex-column justify-start align-items-start">
+          <label for="priceInput">Price</label>
+          <input
+            id="priceInput"
+            class="col-4 add-product-input"
+            type="text"
+            placeholder="Enter price"
+          />
+        </div>
+        <div class="d-flex flex-column justify-start align-items-start">
+          <label for="currencyInput">Currency</label>
+          <input
+            id="currencyInput"
+            class="col-4 add-product-input"
+            type="text"
+            placeholder="Enter Currency"
+          />
+        </div>
+      </div>
+      <div class="d-flex form-inputs">
+        <div class="d-flex flex-column justify-start align-items-start">
+          <label for="colorInput">Color</label>
+          <select id="colorInput" class="col-4 add-product-input" type="select">
+            <option value="" disabled selected>Select color</option>
+            <option>Blue</option>
+            <option>Black</option>
+            <option>Red</option>
+            <option>Yellow</option>
+            <option>Orange</option>
+            <option>White</option>
+          </select>
+        </div>
+        <div class="d-flex flex-column justify-start align-items-start">
+          <label for="quantityInput">Quantity</label>
+          <input
+            id="quantityInput"
+            class="col-4 add-product-input"
+            type="text"
+            placeholder="Enter quantity"
+          />
+        </div>
+      </div>
+      <div class="upload-image-container">
+        <label class="d-inline" for="upload-image">Upload Image</label>
+        <input id="upload-image" type="file" accept="image/*" class="d-none" />
+        <button class="upload-image-button">
+          <img class="upload-image-icon" src="../images/upload-icon.png" />
+          <span class="upload-image-text">Choose Image</span>
+        </button>
+      </div>
+      <div class="btns-container">
+        <button type="reset" class="reset-btn">Reset</button>
+        <button type="submit" class="save-btn">Save</button>
+      </div>
+    </form>
+  </div>
+  <div class="addProduct-design-image">
+    <img src="../images/landing-design.png" class="landing-design-img" />
+  </div>
+</div>
